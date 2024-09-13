@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    box-sizing: border-box;
+    background-color: pink;
+    color: #CD5C5C;
+    width: 100%;
+    min-width: 350px 650px;
+    transition: 0.5s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+
+header {
+    position: fixed;
+    
+    padding: 2% 5% 0% 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-items:center;
+    
+}
+
+.cabecalho_link {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 10px;
+    color: #CD5C5C;
+    text-decoration: none;
+    
+    
+}
+
+.cabecalho_link:hover {
+    color: #f53ba798;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #f5d6edf5;
+    transition: 0.3s;
+}
+
+.trilho {
+    width: 100px;
+    height: 40px;
+    background-color: #CD5C5C;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFB6C1;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.trilho.dark {
+    background-color: #a12262;
+}
+
+.trilho.dark .indicador {
+    left: 60px;
+    background-color: #c903a8ce;
+
+}
+
+body.dark {
+    background-color: #362c35f5;
+
+}
+
+.apresentacao {
+    padding: 7% 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    gap: 50px;
+    width: 615px;
+}
+
+.apresentacao1 {
+    display: flex;
+    flex-direction:column;
+    gap: 32px;
+}
+
+#titulo {
+    font-size: 2.8rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#p1 {
+    font-size: 1.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.apresentacao2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.imageProfile {
+    width: 300px;
+    border-radius: 37.5rem;
+    
+}
+
+.aboutMe {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #CD5C5C;
+    font-size: 1.5rem;
+    gap: 32px;
+}
+
+
+.aboutContent {
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding: 0 5% 0 5%;
+}
+
+#p2 {
+    padding: 3%;
+}
+
+.aboutHabilidade {
+    margin: 5%;
+
+}
+
+.imageHabilidade {
+    bottom: 10%;
+    right: 5%;
+    width: 30%;
+    height: 10%;
+} 
+
+.sendMessage {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem ;
+    color: #CD5C5C;
+}
+
+#contact {
+    padding: 7%;
+}
+
+.portifolio {
+    padding: 7%;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem ;
+    color: #CD5C5C;
+    gap: 32px;
+}
+
+.imagesPortifolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+
+}
+
+#imagePP {
+    justify-content: space-between;
+    padding: 3%;
+    width: 70%;
+    height: 60%;
+    border-radius: 2rem;
+}
+
+#botaoRef {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    gap: 32px;
+}
+
+.sociais {
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: 10%;
+    background-color: #d86e6e;
+    border-radius: 1.110rem;
+    text-decoration: none;
+    color: #e2b5b5;
+    gap: 32px;
+}
+
+.sociais:hover {
+    background-color: #c54c7ff5;
+    color: #e7c2c2;
+    transition: 0.3s;
+}
+
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    width: 80%;
+    height: 100%;
+    gap: 8px;
+}
+
+form [type="submit"] {
+    
+    height: 20%;
+    width: 20%;
+    background-color: #FFF0F5;
+    color: #CD5C5C;
+    font-weight:bold;
+   
+}
+
+form [type="submit"]:hover {
+    background-color: #CD5C5C;
+    color: #FFF0F5;
+    transition: 0.3s;
+    cursor: pointer;
+   
+}
+
+input {
+    height: 10%;
+    width: 60%;
+    padding: 3%;
+    border-radius: 1.110rem;
+    border-color: #FFF0F5;
+    font-size: 15px;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #CD5C5C;
+}
+
+textarea {
+    width: 65%;
+    margin-bottom: 1rem;
+    border: 0.125rem;
+    box-shadow: 0 0 0 0.3125rem #FFB6C1;
+    outline: none;
+    resize: vertical;
+    min-height: 10rem;
+}
+
+.rodape {
+    text-align:center;
+    color: #CD5C5C;
+    padding: 3%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+

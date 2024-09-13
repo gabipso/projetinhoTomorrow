@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetinho</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_menu">
+            <a class="cabecalho_link" href="#home" target="_self" >Início</a>
+            <a class="cabecalho_link"  href="#about">Sobre Mim</a>
+            <a class="cabecalho_link"  href="#projects">Portifólio</a>
+            <a class="cabecalho_link"  href="#contact">Contato</a>
+        </div>
+
+        <div class="trilho" id="trilho">
+            <div class="indicador">
+
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="apresentacao" id="home">
+            
+            <div class="apresentacao1">
+                <h1 id="titulo">Desenvolvedora Web</h1>
+                
+                <p id="p1">Gosto de criar produtos front-end sólidos e escaláveis ​​com ótimas experiências ao usuário.
+                </p>
+                <p id="p1">Um desenvolvedora web orientada a resultados, construindo sites que levam ao sucesso do produto geral.
+                </p>
+                
+            </div>
+
+            <div class="apresentacao2">
+                <img class="imageProfile" src="./images/profile.jpeg" alt="foto de perfil">
+                <div class="links">
+                    
+                    <a class="sociais" href="https://www.linkedin.com/in/gabriellasouz/">Linkedin</a>
+                    <a class="sociais" href="https://github.com/gabipso">GitHub</a>
+                    <a class="sociais" href="https://instagram.com/gabi_pso">Instagram</a>
+                </div>
+            </div>
+            
+                
+            
+        </div>
+    
+       
+        <div class="aboutMe" id="about">
+            <div class="aboutContent">
+                <h2>Sobre Mim:</h2>
+                <p id="p2">Me chamo Gabriella Souza, sou uma estudante focada em Desenvolvimento Web e Frontend, construindo sites e aplicações Web. </p>
+                <p id="p2">Também gosto de compartilhar conteúdo relacionado ao que aprendi em Desenvolvimento Web para que possa trocar informações com outras pessoas. </p>
+                <p id="p2">Estou aberta a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se tiver uma boa oportunidade que corresponda às minhas competências e experiência, não hesite em contactar-me.</p>
+            </div>
+            
+            <div class="aboutHabilidade">
+                <h2>Minhas Habilidades:<h2>
+                <img class="imageHabilidade" src="./images/icon-html.png" alt="icone do html">
+                <img class="imageHabilidade"  src="./images/icon-css.png" alt="icone do css">
+                <img class="imageHabilidade"  src="./images/icon-js.png" alt="icone do javascript">
+            </div>
+
+        </div>
+
+        
+
+        <div id="projects" class="portifolio">
+            <h2>Projetos:</h2>
+            <p>Aqui você encontrará alguns dos projetos pessoais que criei.</p>
+
+            <div class="imagesPortifolio">
+                
+                
+                <a id="botaoRef" href="https://github.com/gabipso/decodificador">
+                    <img id="imagePP" src="./images/portifolio1.png" alt="imagem site de decodificação de texto">
+
+                </a>
+                <a id="botaoRef" href="https://github.com/gabipso/sitemarketing">
+                    <img id="imagePP" src="./images/portifolio2.png" alt="imagem de site de marketing">
+                </a>
+
+            
+            </div>
+
+        </div>
+
+        <div class="sendMessage" id="#contact">
+            <h3 id="contact">Entre em Contato!</h3>
+            <p>Tem uma pergunta, proposta, ou apenas quer
+                 dizer olá? Vá em frente.</p>
+
+            <form class="form" id="form">
+                <label id="nameInput" type="name" >Seu Nome:</label>
+                <input id="nome" type="text" placeholder="Digite seu nome"></input>
+                <label id="emailInput" type="email" >Endereço de E-mail:</label>
+                <input id="email" type="email" placeholder="Email..."></input>
+                <label id="messageInput" type="name" >Sua mensagem:</label>
+                <textarea id="texto" placeholder="Digite sua mensagem..."></textarea>
+                <input onclick="review()" type="submit" value="Enviar"></input>
+            </form>
+        </div>
+
+
+        
+    </main>
+
+    <footer class="rodape">
+        
+        <p>Desenvolvido por Gabi 2024</p>
+    </footer>
+    <script src="./app.js"></script>
+
+
+
+</body>
+</html>
